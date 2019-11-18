@@ -1,0 +1,25 @@
+extends common/page
+
+block head
+	script(type='text/javascript' src='/socket.io/socket.io.js')
+	script(type='text/javascript' src='https://code.jquery.com/jquery-1.11.1.js')
+
+block header
+	include common/header-bar
+
+block nav
+	include common/nav-bar
+
+block content
+	div.container-fluid
+		div.x-chat
+			ul.x-message-window
+			form(action="")
+				input.x-message-input(type="text" placeholder="Message...")
+		div.x-chat-users
+			h5 Online Users
+			ul.x-users-list-online
+				each user in users
+					include chatUser
+
+	include userConnect

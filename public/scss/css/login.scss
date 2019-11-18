@@ -1,0 +1,36 @@
+@import 'common/colours';
+@import 'common/structure';
+
+.x-login-form {
+	padding: 25px;
+	background-color: $background-dark;
+	color: $font-light;
+}
+
+.x-login-btn {
+	width: 50%;
+	border-radius: 0px !important;
+}
+
+.x-input {
+	border-radius: 0px !important;
+	border: 0px !important;
+	height: 50px !important;
+	background-color: rgba(0, 0, 0, 0.4) !important;
+	color: white !important;
+}
+
+.x-input-icon {
+	color: $font-light;
+}
+
+.input-group-addon {
+	border-radius: 0px !important;
+	border: 0px !important;
+	padding: 0px !important;
+	background-color: #2e6da4 !important;
+}
+
+.input-group {
+	margin-bottom: 5px;
+}
